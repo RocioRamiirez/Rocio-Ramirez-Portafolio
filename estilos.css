@@ -14,17 +14,58 @@ a {
 
 body{
     background-color: #000000;
-    margin: 0px auto;
+    margin: 0px 70px;
     font-family: "Open Sans", "Sans Serif";
+    font-weight: 400;
+}
+
+body span {
+    color: #BDFF00;
+}
+
+p span {
     color: #FFFFFF;
+    font-style: italic;
 }
 
 body h1 {
     font-family: "Open Sans", "Sans Serif";
-    color: #BDFF00;
+    color: #FFFFFF;
     font-size: 5em;
     font-weight: 600;
 }
+
+body h2 {
+    font-family: "Open Sans", "Sans Serif";
+    color: #BDFF00;
+    font-size: 2.5em;
+}
+
+body h3 {
+    font-family: "Silkscreen", "monospace";
+    font-size: 2em;
+    color: #BDFF00;
+}
+
+body h4 {
+    font-family: "Open Sans", "Sans Serif";
+    color: #BDFF00;
+    font-weight: 500;
+    font-size: 1.5em;
+}
+
+body p {
+    font-family: "Open Sans", "Sans Serif";
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 1.5em;
+}
+
+body img {
+    border-radius: 30px;
+}
+
+/*NAV*/
 
 nav ul {
     font-family: "Silkscreen", "monospace";
@@ -35,9 +76,7 @@ nav ul {
     justify-content: space-between;
 }
 
-nav span {
-    color: #BDFF00;
-}
+/*FOOTER*/
 
 footer p {
     font-family: "Silkscreen", "monospace";
@@ -83,6 +122,104 @@ footer ul {
 
 
 /*ILUSTRACION*/
+
+/*intro*/
+
+#intro-ilustraciones {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0px;
+}
+
+#intro-ilustraciones a {
+    color: #000000;
+    font-weight: 600;
+    background-color: #BDFF00;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+    max-width: 10%;
+    border-radius: 30px;
+}
+
+#intro-ilustraciones p {
+    padding-right: 40%;
+}
+
+/*galeria*/
+
+.galeria-ilustraciones {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+}
+
+.primera-columna {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.segunda-columna {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.tercera-columna {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+/*icon*/
+
+.icons p {
+    color: #BDFF00;
+    font-size: 10em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10% 0%;
+}
+
+/*recomendados*/
+
+.section-recomendados {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 20px 0px;
+}
+
+.contenedor-perfiles {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.perfiles-de-ig {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+.perfiles-de-ig p {
+    font-size: 1.1em;
+    max-width: 70%;
+}
+
+.perfiles-de-ig a {
+    color: #000000;
+    font-weight: 600;
+    background-color: #BDFF00;
+    display: flex;
+    justify-content: center;
+    padding: 12px 25px;
+    max-width: 18%;
+    border-radius: 30px;
+}
 
 /*DISEÑO GRAFICO*/
 
