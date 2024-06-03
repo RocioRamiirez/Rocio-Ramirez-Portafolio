@@ -81,7 +81,7 @@ nav ul {
 footer p {
     font-family: "Silkscreen", "monospace";
     color: #FFFFFF;
-    font-size: 1.5em;
+    font-size: 1em;
     padding: 25px;
     display: flex;
     justify-content: space-between;
@@ -182,6 +182,36 @@ footer ul {
     gap: 70px;
 }
 
+/*hover-ilustraciones*/
+
+.ilustraciones {
+    position: relative;
+    overflow: hidden;
+}
+
+.ilustraciones::before {
+    content: "Titulo";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000000;
+    transform: translate(100%);
+    transition: transform 1s;
+    opacity: .7;
+    font-family: "Silkscreen", "monospace";
+    font-size: 2em;
+    color: #BDFF00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ilustraciones:hover::before {
+    transform: translate(0);
+}
+
 /*icon*/
 
 .icons p {
@@ -257,7 +287,41 @@ footer ul {
     border-radius: 30px;
     border: 2px solid #BDFF00;
 /* sombra trabajos */
+/*
     box-shadow: 20px 20px 0px 0px #BDFF00;
+*/
+}
+
+/*animacion-proyectos*/
+
+.diseños {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.diseños::before {
+    content: "ver más";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000000;
+    border-radius: 30px;
+    transform: translateY(100%);
+    transition: transform 1s;
+    opacity: .8;
+    font-family: "Silkscreen", "monospace";
+    font-size: 2em;
+    color: #BDFF00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.diseños:hover::before {
+    transform: translateY(0);
 }
 
 .proyectos ul {
@@ -283,10 +347,6 @@ footer ul {
 
 .contenedor-rocio p {
     max-width: 50%;
-}
-
-.sobre-mi, .icons {
-    display: flex;
 }
 
 .contenedor-lola p {
@@ -336,3 +396,19 @@ textarea {
     max-width: 30%;
 }
 
+/*******ANIMACIONES*******/
+
+/*titulos*/
+
+h1 {
+    animation: mover 1s;
+}
+
+@keyframes mover {
+    from {
+        transform: translateX(-500px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
