@@ -14,12 +14,10 @@
 </head>
 
 <body>
-    <header>
+    <header id="top">
         <nav>
+            <a href="home.html">HOME</a>
             <ul>
-                <div>
-                    <li><a href="home.html">HOME</a></li>
-                </div>
                 <li><a href="ilustraciones.html">ILUSTRACIÓN</a></li>
                 <li><a href="diseño-grafico.html">DISEÑO GRÁFICO</a></li>
                 <li><a href="sobre-mi.html">SOBRE MI</a></li>
@@ -30,12 +28,10 @@
 
     <main>
         <section>
-            <article>
+            <article id="intro">
                 <h1>TRABAJEMOS JUNT<span>❋</span>S</h1>
                 <p>
                     Si te interesan mis trabajos, colaboremos!
-                </p>
-                <p>
                     Completa tus datos para que nos pongamos en contacto
                 </p>
             </article>
@@ -44,13 +40,15 @@
             <article class="formulario">
                 <h2>CONTACTO</h2>
                 <form method="post" action="mailto:soledad.ramiirez@gmail.com?subject=Email enviado desde formulario" target="_blank" enctype="text/plain">
-                    <input type="text" name="Nombre" id="Nombre" placeholder="Nombre Completo" required>
+                    <input type="text" name="Nombre" id="Nombre" placeholder="Nombre Completo *" required>
 
-                    <input type="email" name="Email" id="Email" placeholder="Email" required>
+                    <input type="email" name="Email" id="Email" placeholder="Email *" required>
 
-                    <input type="text" name="Motivo" id="Motivo" placeholder="Motivo" required>
+                    <input type="text" name="Motivo" id="Motivo" placeholder="Motivo *" required>
 
-                    <textarea name="Mensaje" id="Mensaje" required>Mensaje</textarea>
+                    <textarea name="Mensaje" id="Mensaje" placeholder="Mensaje *" required></textarea>
+
+                    <p>* campos obligatorios</p>
 
                     <input type="submit" value="ENVIAR   🡭" formenctype="text/plain" class="enviar">
                 </form>
@@ -62,7 +60,7 @@
         <ul>
             <li>TODOS LOS DERECHOS RESERVADOS</li>
             <li>///</li>
-            <li><a href="#intro-ilustraciones"><span>VOLVER ARRIBA</span></a></li>
+            <li><a href="#top"><span>VOLVER ARRIBA</span></a></li>
         </ul>
     </footer>
 </body>

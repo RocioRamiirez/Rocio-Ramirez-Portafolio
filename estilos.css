@@ -12,7 +12,7 @@ a {
     color: #FFFFFF;
 }
 
-body{
+body {
     background-color: #000000;
     margin: 0px 70px;
     font-family: "Open Sans", "Sans Serif";
@@ -67,7 +67,7 @@ body img {
 
 /*NAV*/
 
-nav ul {
+nav {
     font-family: "Silkscreen", "monospace";
     color: #FFFFFF;
     font-size: 1.5em;
@@ -76,13 +76,18 @@ nav ul {
     justify-content: space-between;
 }
 
+nav ul {
+    display: flex;
+    gap: 70px;
+}
+
 /*FOOTER*/
 
 footer p {
     font-family: "Silkscreen", "monospace";
     color: #FFFFFF;
     font-size: 1em;
-    padding: 25px;
+    padding: 25px 0px;
     display: flex;
     justify-content: space-between;
 }
@@ -105,7 +110,14 @@ footer ul {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding: 23% 0%;
+    padding: 19% 0%;
+}
+
+.dos-opciones li :hover {
+    background-color: #BDFF00;
+    color: #000000;
+    border-radius: 30px;
+    padding: 20px;
 }
 
 /*HOME*/
@@ -129,19 +141,17 @@ footer ul {
     font-style: normal;
 }
 
-
 /*ILUSTRACION*/
 
 /*intro*/
 
-#intro-ilustraciones {
+#intro {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 20px 0px;
 }
 
-#intro-ilustraciones a {
+#intro a {
     color: #000000;
     font-weight: 700;
     background-color: #BDFF00;
@@ -152,7 +162,7 @@ footer ul {
     border-radius: 30px;
 }
 
-#intro-ilustraciones p {
+#intro p {
     padding-right: 40%;
 }
 
@@ -220,7 +230,7 @@ footer ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10% 0%;
+    padding: 7% 0%;
 }
 
 /*recomendados*/
@@ -262,11 +272,40 @@ footer ul {
 
 /*DISEÑO GRAFICO*/
 
+/*tengo exp en*/
+
 .experiencia li {
     color: #FFFFFF;
+    padding: 5px;
+}
+
+.experiencia {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.experiencia h2 {
+    padding: 50px 0px 0px 0px;
+}
+
+.lista-exp {
+    display: flex;
+    gap: 60px;
 }
 
 /*manejo bien*/
+
+.manejo-bien {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.manejo-bien h2  {
+    padding: 50px 0px 0px 0px;
+
+}
 
 .contenedor-programas {
     display: flex;
@@ -290,6 +329,12 @@ footer ul {
 /*
     box-shadow: 20px 20px 0px 0px #BDFF00;
 */
+}
+
+.proyectos {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
 /*animacion-proyectos*/
@@ -332,6 +377,10 @@ footer ul {
     gap: 60px;
 }
 
+/*video*/
+
+
+
 /*SOBRE MI*/
 
 .yo h1 {
@@ -355,6 +404,8 @@ footer ul {
 
 /*CONTACTO*/
 
+/*formulario*/
+
 .formulario h2 {
     color: #000000;
 }
@@ -367,6 +418,12 @@ footer ul {
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+.formulario p {
+    font-size: 1em;
+    font-style: italic;
+    color: #000000;
 }
 
 form {
@@ -412,3 +469,22 @@ h1 {
         transform: translateX(0);
     }
 }
+
+/*iconos*/
+
+/*
+.frase span {
+    animation: girar 5s infinite linear inline-block;
+}
+
+@keyframes girar {
+    from{
+        transform: rotate(360deg);
+    }
+    
+    to{
+        transform: rotate(0deg);
+    }
+}
+
+no funciona */
