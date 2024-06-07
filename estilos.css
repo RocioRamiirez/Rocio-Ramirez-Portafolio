@@ -192,7 +192,8 @@ footer ul {
     gap: 70px;
 }
 
-/*hover-ilustraciones*/
+
+/*hover-ilustraciones
 
 .ilustraciones {
     position: relative;
@@ -221,7 +222,7 @@ footer ul {
 .ilustraciones:hover::before {
     transform: translate(0);
 }
-
+*/
 /*icon*/
 
 .icons p {
