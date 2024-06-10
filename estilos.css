@@ -174,55 +174,12 @@ footer ul {
     gap: 70px;
 }
 
-.primera-columna {
+.columnas-galeria {
     display: flex;
     flex-direction: column;
     gap: 70px;
 }
 
-.segunda-columna {
-    display: flex;
-    flex-direction: column;
-    gap: 70px;
-}
-
-.tercera-columna {
-    display: flex;
-    flex-direction: column;
-    gap: 70px;
-}
-
-
-/*hover-ilustraciones
-
-.ilustraciones {
-    position: relative;
-    overflow: hidden;
-}
-
-.ilustraciones::before {
-    content: "Titulo";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #000000;
-    transform: translate(100%);
-    transition: transform 1s;
-    opacity: .7;
-    font-family: "Silkscreen", "monospace";
-    font-size: 2em;
-    color: #BDFF00;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.ilustraciones:hover::before {
-    transform: translate(0);
-}
-*/
 /*icon*/
 
 .icons p {
@@ -404,6 +361,10 @@ footer ul {
 }
 
 /*CONTACTO*/
+
+.contacto #intro p {
+    padding-bottom: 50px;
+}
 
 /*formulario*/
 
