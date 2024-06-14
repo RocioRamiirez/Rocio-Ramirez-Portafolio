@@ -53,12 +53,15 @@ body h4 {
 }
 
 body p {
-    font-weight: 400;
     font-size: 1.5em;
 }
 
 body img {
     border-radius: 30px;
+}
+
+.menu-hamburguesa {
+    display: none;
 }
 
 /*NAV*/
@@ -126,14 +129,15 @@ footer ul {
 
 .frase {
     font-size: 5em;
+    font-weight: 600;
     text-align: center;
-    line-height: 15vh;
+    line-height: 14vh;
 }
 
 .contenedor-frase-opciones {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 70px;
 }
 
 /*ILUSTRACION*/
@@ -143,7 +147,7 @@ footer ul {
 #intro {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
     max-width: 1000px;
 }
 
@@ -165,12 +169,51 @@ footer ul {
     justify-content: center;
     gap: 70px;
     padding: 70px 0px;
+    overflow: hidden;
 }
 
 .columnas-galeria {
     display: flex;
     flex-direction: column;
     gap: 70px;
+}
+
+/*hover galeria*/
+
+.light-box {
+    position: fixed;
+    background: rgba(0, 0, 0, .7);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+}
+
+.light-box:target {
+    transform: scale(1);
+}
+
+/*X*/
+
+.light-box span {
+    position: absolute;
+    top: 10px;
+    right: 400px;
+    font-size: 5em;
+    font-weight: 700;
+    color: #BDFF00;
+    cursor: pointer;
+}
+
+/*flechas*/
+
+.next {
+    padding: 20px;
 }
 
 /*iconos*/
@@ -208,6 +251,14 @@ footer ul {
     font-size: 1.1em;
 }
 
+.perfiles-de-ig a {
+    background-color: #BDFF00;
+    color: #000000;
+    font-weight: 600;
+    border-radius: 30px;
+    padding: 10px 20px;
+}
+
 /*DISEÑO GRAFICO*/
 
 /*tengo exp en*/
@@ -236,18 +287,20 @@ footer ul {
 .manejo-bien {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 20px;
 }
 
-.manejo-bien h2  {
-    padding: 50px 0px 0px 0px;
+.manejo-bien h2 {
+    padding-top: 50px;
+}
 
+.manejo-bien p {
+    font-size: 1em;
 }
 
 .contenedor-programas {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    gap: 60px;
 }
 
 .programas {
@@ -255,6 +308,11 @@ footer ul {
     flex-direction: column;
     align-items: center;
     gap: 20px;
+}
+
+.contenedor-exp-manejo {
+    display: flex;
+    gap: 150px;
 }
 
 /*mis proyectos*/
@@ -349,7 +407,7 @@ footer ul {
 .presentacion {
     display: flex;
     flex-direction: column;
-    gap: 60px;
+    gap: 35px;
     padding-top: 30px;
 }
 
@@ -360,7 +418,7 @@ footer ul {
 }
 
 .contenedor-rocio-lola p {
-    max-width: 35%;
+    width: 35%;
 }
 
 /*CONTACTO*/
@@ -378,11 +436,11 @@ footer ul {
 .formulario {
     background-color: #BDFF00;
     border-radius: 30px;
-    max-width: 40%;
     padding: 40px 50px;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    width: 40%;
 }
 
 .formulario p {
@@ -397,7 +455,8 @@ form {
     gap: 20px;
 }
 
-input, textarea {
+input,
+textarea {
     background-color: #FFFFFF;
     font-family: "Silkscreen", "monospace";
     color: #000000;
@@ -415,7 +474,26 @@ textarea {
     font-family: "Open Sans", "Sans Serif";
     font-weight: 700;
     color: #FFFFFF;
-    max-width: 30%;
+}
+
+/*iconos-tres*/
+
+.un-icono {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.dos-iconos {
+    display: flex;
+    gap: 25px;
+}
+
+.contenedor-form-img {
+    display: flex;
+    align-items: flex-end;
+    gap: 200px;
 }
 
 /*******ANIMACIONES*******/
@@ -430,6 +508,7 @@ h1 {
     from {
         transform: translateX(-500px);
     }
+
     to {
         transform: translateX(0);
     }
@@ -442,11 +521,108 @@ h1 {
 }
 
 @keyframes girar {
-    from{
+    from {
         transform: rotate(360deg);
     }
-    
-    to{
+
+    to {
         transform: rotate(0deg);
+    }
+}
+
+/*responsive*/
+
+@media screen and (max-width: 600px) {
+
+    body {
+        margin: 0px 25px;
+    }
+
+    /*NAV*/
+
+    nav {
+        font-size: 1.5em;
+        padding-bottom: 30px;
+    }
+
+    /*FOOTER*/
+
+    footer p {
+        font-size: 1.5em;
+    }
+
+    footer span {
+        font-size: 1.5em;
+        display: flex;
+        align-items: center;
+        padding: 0px 25px;
+    }
+
+    #ocultar-responsive {
+        display: none;
+    }
+
+    /*INDEX*/
+
+    .dos-opciones a {
+        font-size: 1.7em;
+        padding: 20px 32px;
+    }
+
+    .frase img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .frase {
+        font-size: 2em;
+        line-height: 6vh;
+    }
+
+    .dos-opciones {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .contenedor-frase-opciones {
+        gap: 80px;
+    }
+
+    /*SOBRE MI*/
+
+    .yo h1 {
+        padding-right: 0px;
+        font-size: 4em;
+    }
+
+    .presentacion {
+        padding-top: 0;
+    }
+
+    .contenedor-rocio-lola {
+        flex-direction: column;
+        align-items: start;
+        gap: 30px;
+        padding: 0px 25px;
+    }
+    
+    .contenedor-rocio-lola img {
+        width: 500px;
+        height: 500px;
+    }
+
+    .contenedor-rocio-lola p {
+        font-size: 1.8em;
+        width: 100%;
+    }
+
+    .menu-hamburguesa {
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 35px;
+        padding: 0;
     }
 }

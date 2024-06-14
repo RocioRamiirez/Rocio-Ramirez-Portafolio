@@ -2,6 +2,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="estilos.css" rel="stylesheet" type="text/css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,13 +20,20 @@
 <body>
     <header id="top">
         <nav>
-            <a href="index.html">HOME</a>
-            <ul>
+            <a href="index.html" id="ocultar-responsive">HOME</a>
+            <ul id="ocultar-responsive">
                 <li><a href="ilustraciones.html">ILUSTRACIÓN</a></li>
                 <li><a href="diseño-grafico.html">DISEÑO GRÁFICO</a></li>
                 <li><a href="sobre-mi.html"><span>SOBRE MI</span></a></li>
                 <li><a href="contacto.html">CONTACTO</a></li>
             </ul>
+            <div class="menu-hamburguesa">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="39" viewBox="0 0 48 39" fill="none">
+                    <rect width="48" height="8.27586" rx="4.13793" fill="#BDFF00"/>
+                    <rect y="14.8966" width="48" height="8.27586" rx="4.13793" fill="#BDFF00"/>
+                    <rect y="29.7931" width="48" height="8.27586" rx="4.13793" fill="#BDFF00"/>
+                  </svg>
+            </div>
         </nav>
     </header>
 
@@ -82,8 +90,8 @@
 
     <footer>
         <ul>
-            <li>TODOS LOS DERECHOS RESERVADOS</li>
-            <li>///</li>
+            <li id="ocultar-responsive">TODOS LOS DERECHOS RESERVADOS</li>
+            <li id="ocultar-responsive">///</li>
             <li><a href="#top"><span>VOLVER ARRIBA</span></a></li>
         </ul>
     </footer>
